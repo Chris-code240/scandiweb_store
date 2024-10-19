@@ -1,0 +1,64 @@
+header, main{
+  width: 98vw;
+  margin: 0 auto;
+}
+
+.header-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+}
+
+button{
+  padding: .4rem 1rem;
+}
+
+nav button{
+  margin: 0 0 0 1rem;
+}
+
+.product{
+  width: 15rem;
+  height: 10rem;
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 .4rem .4rem 0;
+}
+.product input{
+  position: absolute;
+  left: 2%;
+  top: 2%;
+}
+.product .details {
+  text-align: center;
+}
+.product p{
+  margin: .4rem 0;
+}
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.input-wrapper input, select{
+  width: 15rem;
+  padding: .4rem 1rem;
+}
+.input-wrapper{
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: .4rem .2rem;
+}
