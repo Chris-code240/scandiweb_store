@@ -56,7 +56,7 @@ function AddPage({products = []}){
 
         if(!isEmpty && !exist){
 
-            axios.post('http://localhost:80/store_backend/api.php',formData).then(res=>{
+            axios.post('http://christian-marf0.onlinewebshop.net/api.php',formData).then(res=>{
                 if(res.data.success){
                     navigate('/')
                 }else{
