@@ -56,7 +56,7 @@ function AddPage({products = []}){
 
         if(!isEmpty && !exist){
 
-            axios.post('http://scandiweb-store.great-site.net/api.php',formData).then(res=>{
+            axios.post('https://scandiweb-store.great-site.net/api.php',formData).then(res=>{
                 if(res.data.success){
                     navigate('/')
                 }else{
