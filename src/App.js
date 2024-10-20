@@ -2,7 +2,7 @@
 import './App.css';
 import ProductsPage from './screens/ProductsPage';
 import AddPage from './screens/AddPage';
-import {BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import {HashRouter as Router, Routes, Route } from "react-router-dom"
 import Header from './components/Header';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -34,7 +34,7 @@ function App() {
   }).catch(e=>alert(JSON.stringify(e)))
   }
   return (
-    <Router basename="/scandiweb_store">
+    <Router>
 
       <div>
         <Header deleteCallBack={deleteCallBack} />
