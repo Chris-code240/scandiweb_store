@@ -34,7 +34,7 @@ function App() {
   }).catch(e=>alert(JSON.stringify(e)))
   }
   return (
-    <Router>
+    <Router basename='/scandiweb_store'>
 
       <div>
         <Header deleteCallBack={deleteCallBack} />
