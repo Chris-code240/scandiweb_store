@@ -24,7 +24,7 @@ function App() {
   const deleteCallBack = (e)=>{
 
  
-    axios.delete('http://localhost:80/store_backend/api.php',{data:selectedProducts}).then(res =>{
+    axios.delete('http://christian-marf0.onlinewebshop.net/api.php',{data:selectedProducts}).then(res =>{
       if(res.data.success){
         for (let p of selectedProducts){
           setProducts(products.filter(product => product.sku !== p));
