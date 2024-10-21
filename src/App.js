@@ -2,19 +2,11 @@
 import './App.css';
 import ProductsPage from './screens/ProductsPage';
 import AddPage from './screens/AddPage';
-import {HashRouter as Router, Routes, Route, useLocation } from "react-router-dom"
+import {HashRouter as Router, Routes, Route } from "react-router-dom"
 import Header from './components/Header';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 function App() {
-  const location = useLocation();
-
-  useEffect(() => {
-    const queryPath = new URLSearchParams(window.location.search).get('pathname');
-    if (queryPath && location.pathname !== queryPath) {
-      window.history.replaceState({}, '', queryPath);
-    }
-  }, [location]);
 
   let [products, setProducts] = useState([])
   let [selectedProducts, setSelectedProducts] = useState([])
